@@ -1,0 +1,226 @@
+:root {
+    --background: #333533;
+    --primary: #ffc300;
+    --white: #f5f5f5;
+    --bg-category:#7e796841;
+    --bg-links: #1f1f1d5e;
+    --faded-white: #f5f5f548;
+    --description: #cccccc;
+    --hover: #ffae009a;
+
+    --light-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    --normal-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--white);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 280px;
+    height: 150px;;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 10px 0;
+}
+
+@media(min-width: 768px) {
+    .container {
+        max-width: 760px;
+    }
+
+    .categories {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.category-btn {
+    background-color: var(--bg-category);
+    color: var(--primary);
+    border: none;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: var(--light-shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.category-btn:hover {
+    background-color: var(--hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.contact-info {
+    margin: 15px 0;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--bg-links);
+    border-radius: 10px;
+    box-shadow: var(--normal-shadow);
+}
+
+h4 {
+    text-transform: uppercase;
+    color: var(--primary);
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 8px 10px;
+    transition: all 0.3s ease;
+
+}
+
+.social-link:hover {
+    background-color: var(--faded-white);
+}
+
+.social-img {
+    width: 30px;
+    height: 30px;
+}
+
+.observations {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: var(--bg-category);
+    border-radius: 10px;
+    box-shadow: var(--normal-shadow);
+}
+
+.obs-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+    letter-spacing: 2px;
+}
+
+.obs-text {
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+/* Página de categoria */
+
+.category-page {
+    display: none;
+    padding: 15px;
+}
+
+.back-btn {
+    background-color: var(--primary);
+    color: var(--background);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;;
+}
+
+.category-title {
+    text-align: center;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-item {
+    background-color: var(--bg-category);
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: var(--normal-shadow);
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.item-name {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--white);
+}
+
+.item-price {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.item-description {
+    font-size: 0.9rem;
+    color: var(--description)
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 0.8rem;
+    color: var(--description);
+}
+
+

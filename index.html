@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cardapio The Club</title>
+</head>
+<body>
+    <div class="container" id="home-page">
+        <header>
+            <img class="logo" src="imagens/image-removebg-preview.png" alt="the club disco lounge logo">
+        </header>
+
+        <div class="categories">
+            <button class="category-btn" onclick="showCategory('bebidas')">
+                <img src="imagens/bebidas.png" alt="bebidas imagem">
+                Bebidas
+            </button>
+            <button class="category-btn" onclick="showCategory('cervejas')">
+                <img src="imagens/cerveja.png" alt="cerveja imagem">
+                Cervejas
+            </button>
+            <button class="category-btn" onclick="showCategory('batidas')">
+                <img src="imagens/batidas.png" alt="batidas imagem">
+                Batidas
+            </button>
+            <button class="category-btn" onclick="showCategory('doses')">
+                <img src="imagens/dose.png" alt="doses imagem">
+                Doses
+            </button>
+            <button class="category-btn" onclick="showCategory('combos')">
+                <img src="imagens/combo.png" alt="combos imagem">
+                Combos
+            </button>
+            <button class="category-btn" onclick="showCategory('drinks')">
+                <img src="imagens/drink.png" alt="drinks imagem">
+                Drinks
+            </button>
+            <button class="category-btn" onclick="showCategory('vinhos')">
+                <img src="imagens/vinho.png" alt="vinhos imagem">
+                Vinhos
+            </button>
+            <button class="category-btn" onclick="showCategory('porcoes')">
+                <img src="imagens/porcoes.png" alt="porções imagem">
+                Porções
+            </button>
+        </div>
+
+        <div class="contact-info">
+            <h4>siga-nos</h4>
+            <div class="social-links">
+                <a href="https://www.instagram.com/the_club_disco_lounge/" class="social-link">
+                    <img src="/imagens/insta.png" alt="instagram logo" class="social-img">
+                    @the_club_disco_lounge
+                </a>
+                <a href="https://wa.me/5512982980000" class="social-link">
+                    <img src="/imagens/whats.png" alt="whatsapp logo" class="social-img">
+                    (12) 98298-0000
+                </a>
+                <a href="https://wa.me/5512997540819" class="social-link">
+                    <img src="/imagens/whats.png" alt="whatsapp logo" class="social-img">
+                    (12) 99754-0819
+                </a>
+            </div>
+        </div>
+
+        <div class="observations">
+            <h4 class="obs-title"> Observações </h4>
+            <p class="obs-text">
+                Para sua melhor comodidade você pode realizar o seu pedido com a atendente que fica no salão.
+            </p>
+        </div>
+
+        <footer>
+            © 2025 The Club Disco Lounge - Todos os direitos reservados
+        </footer>
+    </div>
+
+    <!-- Página de Categorias-->
+    <div class="container category-page" id="category-page">
+        <button class="back-btn" onclick="showHomePage()">
+            ← Voltar
+        </button>
+        <h2 class="category-title" id="category-title">Categoria</h2>
+        <div class="menu-items" id="menu-items">
+            <!-- Os itens do cardápio serão inseridos aqui dinamicamente -->
+        </div>
+    </div>
+
+
+</body>
+</html>
